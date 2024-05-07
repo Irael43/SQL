@@ -1,0 +1,40 @@
+Selecionar os alunos aprovados (nota acima de 7,0):
+sql
+Copy code
+SELECT * FROM ALUNO WHERE Nota > 7.0;
+Selecionar os alunos do primeiro ano com nota maior ou igual a 8,0:
+sql
+Copy code
+SELECT * FROM ALUNO WHERE Nota >= 8.0 AND Ano = 1;
+Selecionar apenas os nomes e as notas dos alunos:
+sql
+Copy code
+SELECT PNome, UNome, Nota FROM ALUNO;
+Criar uma tabela PROFESSOR com apenas o primeiro e o último nome do professor:
+sql
+Copy code
+CREATE TABLE PROFESSOR AS
+SELECT PNome, UNome FROM PROFESSOR;
+Criar uma tabela ALUNO com o primeiro e o último nome de cada aluno:
+sql
+Copy code
+CREATE TABLE ALUNO_NOME AS
+SELECT PNome, UNome FROM ALUNO;
+União entre a tabela ALUNO (PNome, UNome) e a tabela PROFESSOR:
+sql
+Copy code
+SELECT PNome, UNome FROM ALUNO
+UNION
+SELECT PNome, UNome FROM PROFESSOR;
+Intersecção entre a tabela ALUNO (PNome, UNome) e a tabela PROFESSOR:
+sql
+Copy code
+SELECT PNome, UNome FROM ALUNO
+INTERSECT
+SELECT PNome, UNome FROM PROFESSOR;
+Diferença entre a tabela ALUNO (PNome, UNome) e a tabela PROFESSOR:
+sql
+Copy code
+SELECT PNome, UNome FROM ALUNO
+EXCEPT
+SELECT PNome, UNome FROM PROFESSOR;
