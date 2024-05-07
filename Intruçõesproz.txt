@@ -1,0 +1,7 @@
+Funcionamento:
+
+Cliente: O cliente é uma aplicação ou dispositivo que solicita serviços ou recursos ao servidor. Ele inicia a comunicação enviando uma solicitação para o servidor.
+Servidor: O servidor é uma aplicação ou dispositivo que fornece serviços ou recursos aos clientes. Ele fica aguardando solicitações dos clientes e responde a essas solicitações, processando-as e enviando as respostas de volta aos clientes.
+Comunicação: A comunicação entre cliente e servidor é feita através de protocolos de rede, como HTTP (para aplicações web), TCP/IP, etc. O cliente envia uma solicitação ao servidor, que processa essa solicitação e envia uma resposta de volta ao cliente.
+Arquitetura em camadas: Muitas vezes, a arquitetura cliente-servidor é organizada em camadas, onde diferentes partes do sistema são responsáveis por diferentes aspectos da comunicação e do processamento. Por exemplo, em uma aplicação web, o cliente pode ser responsável pela interface do usuário, enquanto o servidor lida com a lógica de negócios e o armazenamento de dados.
+Escalabilidade: Uma das vantagens da arquitetura cliente-servidor é sua capacidade de escalar, ou seja, lidar com um grande número de clientes simultaneamente. Isso pode ser feito adicionando mais servidores para distribuir a carga de trabalho ou melhorando o desempenho dos servidores existentes.
